@@ -1,11 +1,11 @@
 return {
 
     useScheduledWeather = true, -- Do you want txAdmin to schedule custom rain and thunder near restart?
-    serverDuration = 14, -- How many hours will the server run before restarting?, if a server restarts every 8 hours put this to 9 etc.
-    weatherCycletimer = 30, -- How many minutes between weather changes
+    serverDuration = 13, -- How many hours will the server run before restarting?, if a server restarts every 8 hours put this to 9 etc.
+    weatherCycletimer = 60, -- How many minutes between weather changes
 
     timeBetweenRain = 180, -- How many minutes between rain events
-    rainAfterRestart = 60, -- How many minutes AFTER a server restart before rain will start to show?
+    rainAfterRestart = 180, -- How many minutes AFTER a server restart before rain will start to show?
 
     decemberSnow = true, -- if turned on means that only snow will happen in december
 
@@ -19,11 +19,11 @@ return {
         ['FOGGY'] = 0.1,
         ['NEUTRAL'] = 0.0,
         ['OVERCAST'] = 0.1,
-        ['RAIN'] = 0.1,
+        ['RAIN'] = 0.0,
         ['SMOG'] = 0.1,
         ['SNOW'] = 0.0,
         ['SNOWLIGHT'] = 0.0,
-        ['THUNDER'] = 0.1,
+        ['THUNDER'] = 0.0,
         ['XMAS'] = 0.0
     },
 
@@ -191,7 +191,7 @@ return {
                 },
                 {
                     weather = 'RAIN',
-                    time = math.random(5, 10), -- Minutes
+                    time = math.random(2, 3), -- Minutes
                     windSpeed = 2.0,
                 },
                 {
@@ -228,7 +228,7 @@ return {
                 },
                 {
                     weather = 'RAIN',
-                    time = math.random(5, 10), -- Minutes
+                    time = math.random(1, 2), -- Minutes
                     windSpeed = 3.5,
                 },
                 {
@@ -255,7 +255,7 @@ return {
                 },
                 {
                     weather = 'RAIN',
-                    time = math.random(3, 7),
+                    time = math.random(2, 3),
                     windSpeed = 1.0,
                 },
                 {
@@ -265,7 +265,7 @@ return {
                 },
                 {
                     weather = 'RAIN',
-                    time = math.random(5, 10), -- Minutes
+                    time = math.random(1, 3), -- Minutes
                     windSpeed = 2.0,
                 },
                 {
@@ -302,7 +302,7 @@ return {
                 },
                 {
                     weather = 'RAIN',
-                    time = math.random(3, 7),
+                    time = math.random(1, 3),
                     windSpeed = 12.0,
                 },
                 {
