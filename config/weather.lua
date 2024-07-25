@@ -13,7 +13,7 @@ return {
     staticWeather = {
         ['BLIZZARD'] = 0.0, --0% chance
         ['CLEAR'] = 0.1, -- 10% chance
-        ['CLEARING'] = 0.1, -- 10% chance
+        ['CLEARING'] = 0.0, -- 10% chance
         ['CLOUDS'] = 0.1, -- 10% chance
         ['EXTRASUNNY'] = 0.4, -- 40% chance
         ['FOGGY'] = 0.1,
